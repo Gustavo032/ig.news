@@ -8,8 +8,8 @@ export default function Home() {
       <Head>
         <title>Início | Ignews</title>
       </Head>
-      <h1 className={Styles.title}>
-        Hello <span>World!</span> 
+      <h1>
+        Hello World!
       </h1>
     </>
   );
