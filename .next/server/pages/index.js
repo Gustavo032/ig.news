@@ -105,7 +105,7 @@ module.exports = require("stripe");
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"ignews","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start","lint":"next lint"},"dependencies":{"next":"12.0.7","react":"17.0.2","react-dom":"17.0.2","react-icons":"^4.3.1","sass":"^1.45.0","stripe":"^8.195.0"},"devDependencies":{"@types/node":"^16.11.12","@types/react":"^17.0.37","eslint":"8.4.1","eslint-config-next":"12.0.7","typescript":"^4.5.3"},"version":"0.1.0"}');
+module.exports = JSON.parse('{"name":"ignews","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start","lint":"next lint"},"dependencies":{"next":"12.0.7","next-auth":"^4.0.6","react":"17.0.2","react-dom":"17.0.2","react-icons":"^4.3.1","sass":"^1.45.0","stripe":"^8.195.0"},"devDependencies":{"@types/node":"^16.11.12","@types/react":"^17.0.37","eslint":"8.4.1","eslint-config-next":"12.0.7","typescript":"^4.5.3"},"version":"0.1.0"}');
 
 /***/ })
 
