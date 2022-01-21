@@ -10,7 +10,7 @@ type User = {
         id: string;
     }
     data: {
-        stripe_costumer_id: string;
+        stripe_customer_id: string;
     }
 }
 
@@ -28,7 +28,7 @@ export default async function checkoutSession(req: NextApiRequest, res: NextApiR
             
         )
 
-        let customerId = user.data.stripe_costumer_id
+        let customerId = user.data.stripe_customer_id
 
         if(!customerId){
             const stripeCustomer =  await stripe.customers.create({
@@ -41,7 +41,7 @@ export default async function checkoutSession(req: NextApiRequest, res: NextApiR
                 q.Update(
                     q.Ref(q.Collection('users'), user.ref.id),{
                         data: { 
-                            stripe_costumer_id: stripeCustomer.id,
+                            stripe_customer_id: stripeCustomer.id,
                         }
                     }
                 )
