@@ -23,7 +23,7 @@ export async function saveSubscription(
 
     const subscriptionData = {
         id: subscriptionId,
-        user: userRef,
+        userId: userRef,
         status: subscription.status,
         price_id: subscription.items.data[0].price.id
     }

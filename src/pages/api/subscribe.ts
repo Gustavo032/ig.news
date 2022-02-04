@@ -32,7 +32,7 @@ export default async function checkoutSession(req: NextApiRequest, res: NextApiR
 
         if(!customerId){
             const stripeCustomer =  await stripe.customers.create({
-                email: session.user.email,
+                email: session.user.email
                 // metadata:
                 
             })
